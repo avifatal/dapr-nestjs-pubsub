@@ -1,0 +1,8 @@
+version: '3.9'
+services:
+  pubsub:
+    image: rabbitmq:3-management-alpine
+    container_name: 'pubsub'
+    ports:
+      - 5674:5672
+      - 15674:15672
